@@ -3,7 +3,10 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hi!")
+    return HttpResponse("Hello!")
 
 def world(request):
     return HttpResponse("Hello, World!")
+
+def greet(request, name):
+    return HttpResponse(f"Hello, {name}!")
