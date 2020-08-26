@@ -9,4 +9,5 @@ def world(request):
     return HttpResponse("Hello, World!")
 
 def greet(request, name):
-    return HttpResponse(f"Hello, {name.capitalize()}!")
+    return render(request, "Hello/greet.html")
+    
