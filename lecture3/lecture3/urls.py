@@ -21,8 +21,9 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^hello/', include("hello.urls"))
-    url(r'^newyear/', include("newyear.urls"))
-    # path(r'admin/', admin.site.urls),
-    # path(r'hello/', include('hello.urls'))
+    url(r'^hello/', include("hello.urls")),
+    url(r'^newyear/', include('newyear.urls'))
+    # path('admin/', admin.site.urls),
+    # path('hello/', include('hello.urls')),
+    # path('newyear/', include('newyear.urls'))
 ]
