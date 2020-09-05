@@ -6,7 +6,7 @@ def index(request):
     return render(request,"Hello/index.html")
 
 def world(request):
-    return HttpResponse("Hello, World!")
+    return HttpResponse("Hello!")
 
 def greet(request, name):
     return render(request, "Hello/greet.html", {

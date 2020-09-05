@@ -20,10 +20,10 @@ from django.contrib import admin
 # from django.conf.urls import include, path
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
     url(r'^hello/', include("hello.urls")),
     url(r'^newyear/', include('newyear.urls')),
-    url(r'^tasks/', include('tasks.urls'))
+    url(r'^tasks/', include('tasks.urls')),
+    url(r'^admin/', admin.site.urls)
     # path('admin/', admin.site.urls),
     # path('hello/', include('hello.urls')),
     # path('newyear/', include('newyear.urls'))
